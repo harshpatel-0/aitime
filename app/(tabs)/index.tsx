@@ -6,7 +6,7 @@ export default function Index() {
     <View style={styles.container}>
       <Text style={styles.text}>Home screen</Text>
       <Link href="/(tabs)/profile" style={styles.button}>
-        Go to About screen
+        Go to Profile screen
       </Link>
     </View>
   );
