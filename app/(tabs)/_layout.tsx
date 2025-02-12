@@ -29,11 +29,29 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="calendar"
+        options={{
+          title: 'Calendar',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'calendar' : 'calendar-outline'} color={color} size={24}/>
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="events"
+        options={{
+          title: 'Events',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'bar-chart' : 'bar-chart-outline'} color={color} size={24}/>
+          ),
+        }}
+      />
+            <Tabs.Screen
         name="about"
         options={{
           title: 'About',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
+            <Ionicons name={focused ? 'person' : 'person-outline'} color={color} size={24}/>
           ),
         }}
       />
