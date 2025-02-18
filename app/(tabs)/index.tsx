@@ -22,7 +22,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Image source={require('../assets/images/husky.png')} style={styles.logo} />
+        <Image source={require('../../assets/images/husky.png')} style={styles.logo} />
         <View style={styles.textContainer}>
           <Text style={styles.extraBoldText}>Good Morning,</Text>
           <Text style={styles.boldHuskyText}>Husky!</Text>
@@ -58,10 +58,10 @@ export default function HomeScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* Bottom Tab Bar */}
+      {/* Bottom Tab Bar
       <View style={styles.tabBar}>
         <TouchableOpacity onPress={() => router.push('/')}>
-          <FontAwesome5 name="home" size={24} color="black" />
+          <FontAwesome5 name="home" size={24} color="blue" />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => router.push('/events')}>
           <MaterialIcons name="event" size={24} color="black" />
@@ -69,7 +69,7 @@ export default function HomeScreen() {
         <TouchableOpacity onPress={() => router.push('/profile')}>
           <FontAwesome5 name="user" size={24} color="black" />
         </TouchableOpacity>
-      </View>
+      </View> */}
     </View>
   );
 }
